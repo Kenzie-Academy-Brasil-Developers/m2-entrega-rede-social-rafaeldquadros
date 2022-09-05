@@ -1,0 +1,42 @@
+header{
+    width: 100%;
+    height: 75px;
+    background-color:var(--grey-1);
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    margin-left: 10px;
+    color: var(--white-fixed);
+
+    font-weight: (--title-1-weight);
+    font-size: var(--title-1-size);
+    line-height: var(--text-2-height);
+
+    display: flex;
+    align-items: center;
+}
+header > div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+header > div > button{
+    width: max-content;
+
+    background-color: var(--grey-1);
+    color: var(--white-fixed);
+    
+    font-size: var(--text-3-size);
+    line-height: var(--text-2-height);
+    
+    
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+
+}
+header> div > button:hover{
+    background-color: var(--grey-2);
+}

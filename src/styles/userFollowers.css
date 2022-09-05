@@ -1,0 +1,7 @@
+.userFollowers{
+    font-size: var(--text-3-size);
+    font-weight: var(--text-3-weight);
+    line-height: var(--text-3-height);
+
+    color: var(--grey-3);
+}

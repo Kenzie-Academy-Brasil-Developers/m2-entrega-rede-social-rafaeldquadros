@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/text.css">
+    <link rel="stylesheet" href="../styles/color.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/inputs.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;800&display=swap" rel="stylesheet">
+    <title>Pagina de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>TechPosters</h1>
+        <div>
+            <button id="btnLoginPage">Login</button>
+            <button id="btnRegisterPage">Registrar</button>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h2>Cadastro</h2>
+
+            <input class="inputsPage" type="text" placeholder="Seu nome" id="inputNameC">
+            <input class="inputsPage" type="email" placeholder="Seu e-mail" id="inputEmailC">
+            <input class="inputsPage" type="text" placeholder="Sua senha" id="inputSenhaC">
+            <input class="inputsPage" type="text" placeholder="Qual o seu trabalho?" id="inputWorkC">
+            <input class="inputsPage" type="url" placeholder="URL da imagem de perfil" id="inputImgC">
+            <button class="buttonsGeneralBlue" id="btnRegister">Registrar</button>
+            <p>Já possui login?</p>
+            <button class="buttonsGeneralWhite" id="btnIrPgLogin">Ir para página de login</button>
+        </form>
+    </main>
+    <script type="module" src="../scripts/models/cadastro.js"></script>
+</body>
+</html>

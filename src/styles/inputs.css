@@ -1,0 +1,29 @@
+:root{
+    --input-width: 600px;
+    --input-heigth: 40px;
+
+    --border-radius: 4px;
+
+    --outline-color: #4263EB;
+
+    --textarea-width: 600px;
+    --textarea-heigth: 130px;
+    --textarea-color:#495057;
+}   
+
+.inputsPage{
+    width: var(--input-size);
+    height: var(--input-heigth);
+
+    background-color: var(--grey-4);
+    color: var(--grey-2);
+
+    border-radius: var(--border-radius);
+    border: none;
+    
+    outline-color: var(--outline-color);
+
+    font-size: var(--text-1-size);
+    font-weight: 19px;
+    line-height: 100%;
+}

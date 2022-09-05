@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/text.css">
+    <link rel="stylesheet" href="../styles/color.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/inputs.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/imageUser.css">
+    <link rel="stylesheet" href="../styles/workUser.css">
+    <link rel="stylesheet" href="../styles/userName.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/userFollowers.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>home page</title>
+</head>
+<body>
+    <header>
+        <h1>TechPosters</h1>
+        <div>
+            <button id="btnLogout">Sair</button>
+        </div>
+    </header>
+    <main>
+        <section class="userSection" id="user">
+
+        </section>
+        
+        <section class="postSpace" id="newPost">
+            <input  type="text" id="titlePost" placeholder="Digitar título do post">
+            <textarea name="" id="descPost" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+            <button class="buttonsGeneralBlue" id="sendPost">Postar</button>
+        </section>
+        <div class="inverter">
+            <section class="postsSection" id="posts">
+                <h1>Posts</h1>
+                <ul id="listPosts">
+
+                </ul>
+            </section>
+            <aside>
+                <h1>Sugestões para você seguir</h1>
+                <ul id="listSugestions">
+
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <script type="module" src="../scripts/indexDash.js"></script>
+    <script src="https://kit.fontawesome.com/6d5936e46f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

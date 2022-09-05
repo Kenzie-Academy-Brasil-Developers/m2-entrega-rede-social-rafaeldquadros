@@ -1,0 +1,87 @@
+.divModalBG{
+    position: fixed;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--grey-opacity-1);
+}
+
+.divModal{
+    width: 80%;
+    height: max-content;
+
+    background-color: var(--white-fixed);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    position: relative;
+}
+@media (min-width:700px) {
+    .divModal{
+        max-width: 600px;
+    }
+}
+
+/*USUARIO*/
+.divUserModal{
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+}
+.divUserModal h2{
+    position: absolute;
+    left: 22%;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: max-content;
+}
+.divUserModal span{
+    position: absolute;
+    left: 30%;
+    top: 59%;
+}
+
+
+
+/*POST MODAL*/
+.divModalBG h2{
+    font-size:var(--title-1-size);
+    font-weight: var(--title-1-weight);
+    line-height: var(--text-1-height);
+    margin-left: 20px;
+    height: max-content;
+    width: 80%;
+}
+.divModalBG p{
+    font-size: var(--text-1-size);
+    font-weight: var(--text-1-weight);
+    line-height: var(--text-1-height);
+    margin-left: 20px;
+}
+
+.divModal button{
+    width: max-content;
+    background: var(--white-fixed);
+    border: none;
+    color: var(--grey-3);
+    font-weight: 400;
+
+    position: absolute;
+    top: 2%;
+    left: 90%;
+
+    cursor: pointer;
+}

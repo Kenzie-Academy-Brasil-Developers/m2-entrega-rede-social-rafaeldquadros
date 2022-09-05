@@ -1,0 +1,289 @@
+body{
+    width: 100%;
+    height: 80%;
+    font-family: 'Inter', sans-serif; 
+    position: relative;
+}
+
+/* USER SPACE*/
+main{
+    background-color: var(--white-fixed);
+}
+.userSection {
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+}
+.userSection h2{
+    position: absolute;
+    left: 26%;
+}
+.userSection p{
+    position: absolute;
+    left: 50%;
+    top: 24%;
+}
+.userSection span{
+    position: absolute;
+    left: 27%;
+    top: 59%;
+}
+
+/*POST SPACE*/
+
+.postSpace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 240px;
+    position: relative;
+}
+@media (min-width:700px){
+    .postSpace{
+        align-items: flex-start;
+        margin-left: 20px;
+        max-width: 720px;
+    }
+}
+
+.postSpace input{
+    width: 88%;
+    max-width: var(--input-width);
+    height: var(--input-heigth);
+
+    border: solid 2px var(--grey-3);
+    border-radius: var(--border-radius);
+
+    font-size: var(--text-1-size);
+
+    outline-color: var(--outline-color);
+}
+
+
+
+.postSpace textarea{
+    resize: none;
+
+    width: 88%;
+    height: 130px;
+    max-width: var(--textarea-width);
+
+    border: solid 2px var(--grey-3);
+    border-radius: var(--border-radius);
+
+    font-size: var(--text-1-size);
+    font-family: 'Inter', sans-serif; 
+
+    outline-color: var(--outline-color);
+}
+.postSpace button{
+    position: relative;
+    left: 38%;
+}
+@media (min-width:700px) {
+    .postSpace button{
+        position: relative;
+        left: 77%;
+    }
+}
+
+/* POSTS */
+.postsSection{
+    padding: 20px;
+
+    height: max-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (min-width:700px) {
+    .postsSection{
+        width: 720px;
+    }
+}
+
+.postsSection h1{
+    font-size:var(--title-1-size);
+    font-weight: var(--title-1-weight);
+    line-height: var(--text-1-height);
+}
+.postsSection ul{}
+
+.postsSection ul li{
+    height: 250px;
+    width: 280px;
+    max-width: 300px;
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    position: relative;
+    
+}
+
+/* DIV USER LI*/
+
+.divUser{
+    display: flex;
+    position: relative;
+}
+.divUser span{
+    position: absolute;
+    right: 6%;
+    top: 70%;
+
+    width: 200px;
+    height: 20px;
+}
+.divUser h2{
+    position: relative;
+    left: 4%;
+    height: 20px;
+    width: 100%;
+}
+
+/* DIV POST */
+
+.divPost{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+}
+@media (min-width:700px) {
+    .divPost{
+        width: 500px;
+    }
+}
+.divPost h2{
+    font-size:var(--title-1-size);
+    font-weight: var(--title-1-weight);
+    line-height: var(--text-1-height);
+
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.divPost p{
+    font-size: var(--text-1-size);
+    font-weight: var(--text-1-weight);
+    line-height: var(--text-1-height);
+    
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* DIV BUTTONS*/
+
+.divBtns{
+    display: flex;
+    align-items: center;
+    
+}
+.divBtns .buttonsGeneralBlack{
+    width: var(--input-size);
+    height: var(--button-heigth);
+    
+    border: none;
+    border-radius: var(--border-radius);
+
+    font-size: var(--text-2-size);
+    font-weight: var(--text-2-weight);
+    line-height: var(--text-2-height);
+
+    background-color: black;
+    color: var(--white-fixed);
+
+    border: var(--button-border);
+    cursor: pointer;
+
+    margin-right: 15px;
+}
+.divBtns .heartBtn{
+    background-color: var(--white-fixed);
+    border: none;
+    cursor: pointer;
+}
+
+/* SUGESTÕES PARA SEGUIR */
+aside{
+    padding: 20px;
+}
+@media (min-width: 900px) {
+    aside{
+        position: absolute;
+        left: 67%;
+        bottom: 31%;
+    }
+}
+    
+aside h1{
+    font-size:var(--title-1-size);
+    font-weight: var(--title-1-weight);
+    line-height: var(--text-1-height);
+}
+aside ul {
+    display: flex;
+    margin-top: 20px;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+@media (min-width:900px) {
+    aside ul{
+        flex-direction: column;
+        overflow-x: none;
+    }
+}
+aside ul li{
+    position: relative;
+    min-width: 220px;
+    min-height: 182px;
+    display: flex;
+    margin-left: 10px;
+}
+aside ul li img{
+    position: absolute;
+}
+aside ul li h2{
+    position: absolute;
+    left: 34%;
+    top: 2%;
+
+    max-width: 140px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+aside ul li span{
+    position: absolute;
+    left: 34%;
+    top: 20%;
+}
+aside ul li button{
+    position: absolute;
+    top: 49%;
+}
+
+/*INVERTENDO SECTION*/
+
+.inverter{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width:900px) {
+    .inverter{
+       flex-direction: row;
+    }
+}

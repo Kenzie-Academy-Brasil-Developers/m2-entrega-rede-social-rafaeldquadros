@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/text.css">
+    <link rel="stylesheet" href="./src/styles/color.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/inputs.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/login.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;800&display=swap" rel="stylesheet">
     <title>Rede Social</title>
 </head>
 <body>
-    
+    <header>
+        <h1>TechPosters</h1>
+        <div>
+            <button id="btnLoginPage">Login</button>
+            <button id="btnRegisterPage">Registrar</button>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h2>Login</h2>
+            <input class="inputsPage" type="email" placeholder="Seu e-mail" id="emailLogin">
+            <input class="inputsPage" type="password" placeholder="Sua senha" id="senhaLogin">
+            <button class="buttonsGeneralBlue" id="btnLogin">Logar</button>
+            <p>Ainda não possui cadastro?</p>
+            <button class="buttonsGeneralWhite" id="irPgCadastrar">Ir para pagina de registro</button>
+        </form>
+    </main>
+
+    <script type="module" src="./src/scripts/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
