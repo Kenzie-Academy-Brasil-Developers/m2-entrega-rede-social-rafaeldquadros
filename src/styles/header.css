@@ -4,9 +4,15 @@ header{
     background-color:var(--grey-1);
     display: flex;
     justify-content: space-between;
+    
+    position: fixed;
+    top: 0%;
+    
+    z-index: 1;
+
 }
 header h1{
-    margin-left: 10px;
+    margin-left: 20px;
     color: var(--white-fixed);
 
     font-weight: (--title-1-weight);
@@ -16,10 +22,20 @@ header h1{
     display: flex;
     align-items: center;
 }
+@media (min-width:700px) {
+    header h1{
+        margin-left: 100px;
+    }
+}
 header > div{
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+@media (min-width:700px) {
+    header > div{
+        margin-right: 100px;
+    }
 }
 header > div > button{
     width: max-content;

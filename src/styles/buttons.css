@@ -1,5 +1,6 @@
 :root{
     --button-heigth: 35px;
+    --button-width:  600px;
 
     --button-color-1: #4263EB;
     --button-color-2: #FFFFFF;
@@ -8,7 +9,7 @@
 }
 
 .buttonsGeneralBlue{
-    width: var(--input-size);
+    
     height: var(--button-heigth);
     
     border: none;

@@ -12,7 +12,7 @@
 }   
 
 .inputsPage{
-    width: var(--input-size);
+   
     height: var(--input-heigth);
 
     background-color: var(--grey-4);
